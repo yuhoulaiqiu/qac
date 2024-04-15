@@ -14,6 +14,7 @@ const (
 	RedisError            ErrorCode = 1007 //redis错误
 	RepeatDiggError       ErrorCode = 1008 //重复点赞
 	InvalidOperationError ErrorCode = 1009 //无效操作
+	DBError               ErrorCode = 1010 //mysql数据库错误
 )
 
 var (
@@ -27,5 +28,6 @@ var (
 		RedisError:            "redis错误",
 		RepeatDiggError:       "重复点赞",
 		InvalidOperationError: "无效操作",
+		DBError:               "mysql数据库错误",
 	}
 )
