@@ -2,7 +2,6 @@ package res
 
 import (
 	"github.com/gin-gonic/gin"
-	"net/http"
 )
 
 type Response struct {
@@ -21,7 +20,7 @@ const (
 )
 
 func Result(code int, data any, msg string, c *gin.Context) {
-	c.JSON(http.StatusOK, Response{
+	c.JSON(200, Response{
 		Code: code,
 		Data: data,
 		Msg:  msg,

@@ -19,7 +19,7 @@ func main() {
 		flag.SwitchOption(option)
 		return
 	}
-	//global.Redis = core.InitRedis()
+	global.Redis = core.InitRedis()
 	// 调用接口
 	r := routers.InitRouter()
 	// 运行

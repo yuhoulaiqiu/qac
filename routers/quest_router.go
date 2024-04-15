@@ -8,4 +8,6 @@ func (r RouterGroup) QuestRouter() {
 	r.GET("/quest", questApi.QuestionList)
 	r.DELETE("/quest", questApi.QuestDelete)
 	r.PUT("/quest", questApi.QuestUpdate)
+	r.POST("/quest/digg", questApi.QuestDigg)
+	r.POST("/quest/undigg", questApi.QuestUnDigg)
 }

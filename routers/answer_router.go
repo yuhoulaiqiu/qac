@@ -8,4 +8,6 @@ func (r RouterGroup) AnswerRouter() {
 	r.GET("/answer", answerApi.AnswerList)
 	r.DELETE("/answer", answerApi.AnswerDelete)
 	r.PUT("/answer", answerApi.AnswerUpdate)
+	r.POST("/answer/digg", answerApi.AnswerDigg)
+	r.POST("/answer/undigg", answerApi.AnswerUnDigg)
 }
