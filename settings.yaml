@@ -1,0 +1,27 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  config: "charset=utf8mb4&parseTime=True&loc=Local"
+  db: qac
+  user: root
+  password: zxc3240858086
+  log_level: ""
+redis:
+  addr: "localhost:6379"
+  password: ""
+  db: 0
+logger:
+  level: info
+  prefix: '[qac]'
+  director: log
+  showLine: true
+  log_in_console: false
+system:
+  host: 0.0.0.0
+  port: 8080
+  env: release
+  timeout: 10
+jwt:
+  secret: xxxx
+  expires: 1
+  issuer: "1234"
