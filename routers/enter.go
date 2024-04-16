@@ -26,5 +26,7 @@ func InitRouter() *gin.Engine {
 	routerGroupApp.QuestRouter()
 	//回答api
 	routerGroupApp.AnswerRouter()
+	//评论api
+	routerGroupApp.CommentRouter()
 	return router
 }

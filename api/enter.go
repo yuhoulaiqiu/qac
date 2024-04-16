@@ -4,14 +4,16 @@ package api
 
 import (
 	"QAComm/api/answer_api"
+	"QAComm/api/comment_api"
 	"QAComm/api/quset_api"
 	"QAComm/api/user_api"
 )
 
 type ApiGroup struct {
-	UserApi   user_api.UserApi
-	QuestApi  quset_api.QuestApi
-	AnswerApi answer_api.AnswerApi
+	UserApi    user_api.UserApi
+	QuestApi   quset_api.QuestApi
+	AnswerApi  answer_api.AnswerApi
+	CommentApi comment_api.CommentApi
 }
 
 var ApiGroupApp = new(ApiGroup)

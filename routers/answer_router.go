@@ -10,5 +10,4 @@ func (r RouterGroup) AnswerRouter() {
 	r.PUT("/answer", answerApi.AnswerUpdate)
 	r.POST("/answer/digg", answerApi.AnswerDigg)
 	r.POST("/answer/undigg", answerApi.AnswerUnDigg)
-	r.POST("/answer/comment", answerApi.CommentOnAnswer)
 }
